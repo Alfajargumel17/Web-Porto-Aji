@@ -1,0 +1,165 @@
+/* ===========================================
+ORGANIZATION
+=========================================== */
+
+#organization{
+    margin-top:40px;   /* Jarak dengan section sebelumnya */
+    padding-top:40px;  /* Mengurangi ruang kosong di atas */
+}
+
+.organization-wrapper{
+    position:relative;
+}
+
+.organization-slider{
+    overflow:hidden;
+}
+
+.organization-track{
+    display:flex;
+    gap:36px;
+    transition:.5s ease;
+}
+
+.organization-card{
+    flex:0 0 calc((100% - 36px)/2);
+
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    min-height:650px;
+
+    transition:.35s ease;
+}
+
+.organization-card:hover{
+    border-color:var(--line);
+    box-shadow:none;
+    transform:none;
+}
+
+/* ===========================================
+IMAGE
+=========================================== */
+
+.organization-image{
+    width:100%;
+    height:320px;
+    overflow:hidden;
+    background:var(--bg-soft);
+}
+
+.organization-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.4s ease;
+}
+
+.organization-card:hover .organization-image img{
+    transform:none;
+}
+
+/* ===========================================
+CONTENT
+=========================================== */
+
+.organization-content{
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.organization-content h3{
+    font-size:1.45rem;
+    font-weight:700;
+    margin-bottom:10px;
+    color:var(--text);
+}
+
+.organization-name{
+    color:var(--muted);
+    font-size:1.05rem;
+    margin-bottom:8px;
+}
+
+.organization-year{
+    color:var(--accent);
+    font-size:1.05rem;
+    font-weight:700;
+    margin-bottom:22px;
+    font-family:var(--font-mono);
+}
+
+.organization-achievements{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.organization-achievements li{
+    position:relative;
+    padding-left:26px;
+    margin-bottom:14px;
+
+    font-size:1rem;
+    line-height:1.7;
+
+    color:var(--muted);
+}
+
+.organization-achievements li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+
+    color:var(--accent);
+    font-weight:bold;
+}
+
+/* ===========================================
+RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .organization-track{
+        gap:24px;
+    }
+
+    .organization-card{
+        flex:0 0 calc((100% - 24px)/2);
+        min-height:580px;
+    }
+
+    .organization-image{
+        height:260px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .organization-card{
+        flex:0 0 100%;
+        min-height:auto;
+    }
+
+    .organization-image{
+        height:260px;
+    }
+
+    .organization-content{
+        padding:24px;
+    }
+
+}

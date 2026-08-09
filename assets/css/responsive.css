@@ -1,0 +1,487 @@
+/* =========================================================
+   LARGE LAPTOP (≤1200px)
+========================================================= */
+
+@media (max-width:1200px){
+
+    .container{
+        width:min(94%,1100px);
+    }
+    
+    .hero-content{
+        gap:50px;
+    }
+    
+    .hero-text h1{
+        font-size:4.5rem;
+    }
+    
+    }
+    
+    
+    /* =========================================================
+       TABLET (≤992px)
+    ========================================================= */
+    
+    @media (max-width:992px){
+    
+    section{
+        padding:90px 0;
+    }
+    
+    /* HERO */
+    
+    .hero-content{
+    
+        display:flex;
+    
+        flex-direction:column;
+    
+        align-items:center;
+    
+        justify-content:center;
+    
+        text-align:center;
+    
+        gap:40px;
+    
+    }
+    
+    .hero-image{
+    
+        order:1;
+    
+    }
+    
+    .hero-text{
+    
+        order:2;
+    
+        max-width:650px;
+    
+    }
+    
+    .profile-portrait{
+    
+        width:220px;
+    
+    }
+    
+    .hero-text h1{
+    
+        font-size:3.8rem;
+    
+        line-height:1.1;
+    
+    }
+    
+    .hero-role{
+    
+        justify-content:center;
+    
+        flex-wrap:wrap;
+    
+    }
+    
+    /* ABOUT */
+    
+    .about-grid{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    /* EXPERIENCE */
+    
+    .timeline{
+    
+        margin-left:20px;
+    
+    }
+    
+    /* PROJECT */
+    
+    .projects-grid{
+    
+        grid-template-columns:repeat(2,1fr);
+    
+    }
+    
+    /* SKILLS */
+    
+    .skills-container{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    /* CONTACT */
+    
+    .contact-container{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    /* ORGANIZATION */
+    
+    .organization-card{
+    
+        flex:0 0 calc((100% - 24px)/2);
+    
+    }
+    
+    /* CERTIFICATE */
+    
+    .certificate-card{
+    
+        flex:0 0 calc((100% - 24px)/2);
+    
+    }
+    
+    }
+    
+    
+    /* =========================================================
+       MOBILE (≤768px)
+    ========================================================= */
+    
+    @media (max-width:768px){
+    
+    /* NAVBAR */
+    
+    .burger{
+    
+        display:flex;
+    
+    }
+    
+    .nav-inner{
+    
+        padding:16px 20px;
+    
+    }
+    
+    .nav-links{
+    
+        position:absolute;
+    
+        top:100%;
+    
+        left:0;
+    
+        width:100%;
+    
+        display:flex;
+    
+        flex-direction:column;
+    
+        background:rgba(0,0,0,.98);
+    
+        backdrop-filter:blur(12px);
+    
+        max-height:0;
+    
+        overflow:hidden;
+    
+        transition:.35s;
+    
+    }
+    
+    .nav-links.open{
+    
+        max-height:500px;
+    
+    }
+    
+    .nav-links a{
+    
+        display:block;
+    
+        padding:18px 25px;
+    
+    }
+    
+    
+    /* HERO */
+    
+    .hero{
+    
+        padding-top:120px;
+    
+        padding-bottom:70px;
+    
+    }
+    
+    .hero-content{
+    
+        display:flex;
+    
+        flex-direction:column;
+    
+        align-items:center;
+    
+        text-align:center;
+    
+        gap:28px;
+    
+    }
+    
+    .hero-image{
+    
+        order:1;
+    
+    }
+    
+    .hero-text{
+    
+        order:2;
+    
+        max-width:350px;
+    
+    }
+    
+    .profile-portrait{
+    
+        width:180px;
+    
+    }
+    
+    .hero-text h1{
+    
+        font-size:2.7rem;
+    
+        line-height:1.1;
+    
+    }
+    
+    .eyebrow{
+    
+        text-align:center;
+    
+        font-size:.8rem;
+    
+        letter-spacing:3px;
+    
+    }
+    
+    .hero-role{
+    
+        display:flex;
+    
+        justify-content:center;
+    
+        flex-wrap:wrap;
+    
+        gap:12px;
+    
+    }
+    
+    .hero-role span{
+    
+        padding:10px 18px;
+    
+        font-size:.8rem;
+    
+    }
+    
+    
+    /* ABOUT */
+    
+    .about-grid{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    .about-stats{
+    
+        grid-template-columns:repeat(2,1fr);
+    
+    }
+    
+    
+    /* EXPERIENCE */
+    
+    .timeline{
+    
+        margin-left:12px;
+    
+    }
+    
+    
+    /* ORGANIZATION */
+    
+    .organization-card{
+    
+        flex:0 0 100%;
+    
+    }
+    
+    
+    /* PROJECT */
+    
+    .projects-grid{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    
+    /* SKILLS */
+    
+    .skills-container{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    
+    /* CERTIFICATE */
+    
+    .certificate-card{
+    
+        flex:0 0 100%;
+    
+    }
+    
+    
+    /* CONTACT */
+    
+    .contact-container{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    .contact-buttons{
+    
+        flex-direction:column;
+    
+    }
+    
+    .contact-btn{
+    
+        width:100%;
+    
+        justify-content:center;
+    
+    }
+    
+    }
+    
+    
+    /* =========================================================
+       SMALL MOBILE (≤576px)
+    ========================================================= */
+    
+    @media (max-width:576px){
+    
+    section{
+    
+        padding:70px 0;
+    
+    }
+    
+    .container{
+    
+        width:92%;
+    
+    }
+    
+    .profile-portrait{
+    
+        width:160px;
+    
+    }
+    
+    .hero-text{
+    
+        max-width:300px;
+    
+    }
+    
+    .hero-text h1{
+    
+        font-size:2.3rem;
+    
+    }
+    
+    .hero-role{
+    
+        gap:10px;
+    
+    }
+    
+    .hero-role span{
+    
+        font-size:.75rem;
+    
+        padding:8px 14px;
+    
+    }
+    
+    .project-content{
+    
+        padding:20px;
+    
+    }
+    
+    .skill-category{
+    
+        padding:22px;
+    
+    }
+    
+    .contact-card,
+    
+    .contact-cta{
+    
+        padding:22px;
+    
+    }
+    
+    }
+    
+    
+    /* =========================================================
+       EXTRA SMALL (≤400px)
+    ========================================================= */
+    
+    @media (max-width:400px){
+    
+    .profile-portrait{
+    
+        width:140px;
+    
+    }
+    
+    .hero-text h1{
+    
+        font-size:2rem;
+    
+    }
+    
+    .hero-role{
+    
+        flex-direction:column;
+    
+        align-items:center;
+    
+    }
+    
+    .hero-role span{
+    
+        width:100%;
+    
+        max-width:220px;
+    
+    }
+    
+    .timeline-content{
+    
+        padding:18px;
+    
+    }
+    
+    }

@@ -1,0 +1,119 @@
+/* ===========================================
+   ABOUT
+=========================================== */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 0.85fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+.about-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+
+.about-content p{
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+    font-size:1rem;
+
+}
+
+
+/* ===========================================
+   STATS
+=========================================== */
+
+.about-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 170px);
+
+    gap:16px;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.stat-card{
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    padding:22px 18px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+
+/* CARD KE-3 → POSISI TENGAH */
+
+.stat-card:nth-child(3){
+
+    grid-column:1 / -1;
+
+    justify-self:center;
+
+    width:170px;
+
+}
+
+
+.stat-card:hover{
+
+    border-color:var(--line);
+
+    box-shadow:none;
+
+    transform:none;
+
+}
+
+
+.stat-card h3{
+
+    font-size:2.1rem;
+
+    color:var(--accent);
+
+    margin-bottom:10px;
+
+}
+
+
+.stat-card span{
+
+    color:var(--muted);
+
+    font-size:.9rem;
+
+    line-height:1.6;
+
+}

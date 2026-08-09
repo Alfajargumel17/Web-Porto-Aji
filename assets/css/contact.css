@@ -1,0 +1,167 @@
+/* ===========================================
+CONTACT
+=========================================== */
+
+.contact-container{
+    width:100%;
+}
+
+
+/* ===========================================
+INFO CARD
+=========================================== */
+
+.contact-card{
+    width:100%;
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    padding:32px;
+
+    transition:.35s;
+}
+
+
+.contact-card:hover{
+    border-color:var(--accent);
+
+    transform:translateY(-6px);
+
+}
+
+
+.contact-card h3{
+    margin-bottom:14px;
+
+    font-size:1.5rem;
+}
+
+
+.contact-card > p{
+    color:var(--muted);
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    max-width:850px;
+}
+
+
+/* ===========================================
+CONTACT ITEMS
+=========================================== */
+
+.contact-items{
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:24px;
+}
+
+
+.contact-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    min-width:0;
+}
+
+
+.contact-icon{
+    width:52px;
+
+    height:52px;
+
+    min-width:52px;
+
+    border-radius:var(--radius);
+
+    background:var(--bg-soft);
+
+    border:1px solid var(--line);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--accent);
+
+    font-size:1.2rem;
+}
+
+
+.contact-text{
+    min-width:0;
+}
+
+
+.contact-text h4{
+    margin-bottom:4px;
+
+    font-size:1rem;
+}
+
+
+.contact-text a{
+    color:var(--muted);
+
+    transition:.3s;
+
+    white-space:nowrap;
+}
+
+
+.contact-text a:hover{
+    color:var(--accent);
+}
+
+
+/* ===========================================
+TABLET
+=========================================== */
+
+@media (max-width:900px){
+
+    .contact-items{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+
+/* ===========================================
+MOBILE
+=========================================== */
+
+@media (max-width:600px){
+
+    .contact-card{
+        padding:25px;
+    }
+
+
+    .contact-items{
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+
+    .contact-text a{
+        white-space:normal;
+
+        word-break:break-word;
+    }
+
+}

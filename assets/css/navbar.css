@@ -1,0 +1,153 @@
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(0,0,0,.85);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--line);
+
+}
+
+.nav-inner{
+
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:18px 24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ===========================================
+   LOGO
+=========================================== */
+
+.logo{
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    color:var(--accent);
+
+    letter-spacing:1px;
+
+}
+
+/* ===========================================
+   MENU
+=========================================== */
+
+.nav-links{
+
+    display:flex;
+
+    gap:34px;
+
+    align-items:center;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:var(--muted);
+
+    font-size:.92rem;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+/* underline animation */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--text);
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================================
+   BURGER
+=========================================== */
+
+.burger{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+.burger span{
+
+    width:24px;
+
+    height:2px;
+
+    background:white;
+
+    transition:.3s;
+
+}

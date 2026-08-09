@@ -1,0 +1,159 @@
+/* ===========================================
+   SKILLS SECTION
+=========================================== */
+
+.skills-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+/* ===========================================
+   CATEGORY
+=========================================== */
+
+.skill-category{
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    padding:32px;
+
+    transition:.35s;
+
+}
+
+
+
+/* ===========================================
+   TITLE
+=========================================== */
+
+.skill-title{
+
+    margin-bottom:24px;
+
+}
+
+.skill-title h3{
+
+    font-size:1.35rem;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.skill-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+/* ===========================================
+   SKILL CARD
+=========================================== */
+
+.skill-card{
+
+    background:var(--bg-soft);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+
+
+.skill-card span{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .skill-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .skill-category{
+
+        padding:24px;
+
+    }
+
+    .skill-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .skill-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

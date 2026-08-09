@@ -1,0 +1,27 @@
+.certificate-modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.certificate-modal.show{
+    display: flex;
+}
+
+.certificate-modal img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-modal{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}

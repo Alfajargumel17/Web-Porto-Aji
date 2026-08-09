@@ -1,0 +1,80 @@
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    min-height:40vh;
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.eyebrow{
+    display:inline-block;
+    margin-bottom:22px;
+    font-size:13px;
+    font-weight:400;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+
+.hero-text h1{
+    font-family:var(--font-display);
+    font-size:clamp(3.4rem,7vw,5.6rem);
+    font-weight:600;
+    font-style:italic;
+    line-height:1;
+    color:var(--text);
+    margin-bottom:30px;
+    letter-spacing:-0.01em;
+}
+
+.hero-role{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0;
+    font-family:var(--font-mono);
+}
+
+.hero-role span{
+    padding:9px 18px 9px 0;
+    margin-right:18px;
+    border:none;
+    border-bottom:1px solid var(--line);
+    border-radius:0;
+    color:var(--muted);
+    font-size:13px;
+    font-weight:400;
+    background:transparent;
+    transition:.3s;
+}
+
+.hero-role span:hover{
+    color:var(--accent);
+    border-color:var(--accent);
+}
+
+
+/* ===========================================
+   PROFILE PORTRAIT — background removed,
+   fades directly into the page background
+=========================================== */
+
+.profile-portrait{
+    width:300px;
+    flex-shrink:0;
+    filter:grayscale(.08);
+}
+
+.profile-portrait img{
+
+    width:100%;
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+
+}

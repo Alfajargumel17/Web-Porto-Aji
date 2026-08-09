@@ -1,0 +1,182 @@
+/* ===========================================
+   EDUCATION
+=========================================== */
+
+.education-item{
+
+    position:relative;
+
+    margin-left:30px;
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    padding:28px;
+
+    transition:.3s;
+
+}
+
+.education-item:hover{
+
+    border-color:var(--accent);
+
+    transform:translateY(-6px);
+
+
+}
+
+.education-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-43px;
+
+    top:35px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+    border:4px solid var(--bg);
+
+}
+
+.education-item h3{
+
+    font-size:1.15rem;
+
+}
+
+.education-item h4{
+
+    margin-top:3px;
+
+    color:var(--accent);
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+}
+
+/* ===========================================
+   ACHIEVEMENTS
+=========================================== */
+
+.achievements{
+
+    margin-top:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.achievements-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:.85rem;
+
+    color:var(--muted);
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+    margin-bottom:2px;
+
+}
+
+.achievement-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    background:var(--bg-soft);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    padding:16px 18px;
+
+    transition:.3s;
+
+}
+
+.achievement-card:hover{
+
+    border-color:var(--amber);
+
+    transform:translateX(4px);
+
+}
+
+.achievement-icon{
+
+    flex-shrink:0;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:var(--radius);
+
+    background:var(--accent-soft);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--amber);
+
+    font-size:1.05rem;
+
+}
+
+.achievement-info h5{
+
+    font-size:.98rem;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    line-height:1.5;
+
+}
+
+.achievement-info span{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:var(--muted);
+
+    font-size:.82rem;
+
+}

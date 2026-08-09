@@ -1,0 +1,341 @@
+/* ===========================================
+   CERTIFICATES
+=========================================== */
+
+.certificates-wrapper{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.certificates-slider{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+.certificates-track{
+
+    display:flex;
+
+    gap:24px;
+
+    transition:transform .45s ease;
+
+}
+
+/* ===========================================
+   NAVIGATION BUTTON
+=========================================== */
+
+.slider-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    color:var(--text);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:20;
+
+}
+
+.slider-btn:hover{
+
+    background:var(--accent);
+
+    color:var(--accent-contrast);
+
+    border-color:var(--accent);
+
+}
+
+.slider-btn:disabled{
+
+    opacity:.35;
+
+    cursor:not-allowed;
+
+}
+
+.prev{
+
+    left:-28px;
+
+}
+
+.next{
+
+    right:-28px;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.certificate-card{
+
+    flex:0 0 calc((100% - 48px)/3);
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.35s;
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--accent);
+
+}
+
+/* ===========================================
+   IMAGE
+=========================================== */
+
+.certificate-image{
+
+    height:180px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.certificate-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    transition:.35s;
+
+}
+
+.certificate-card:hover .certificate-image img{
+
+    transform:scale(1.03);
+
+}
+
+/* ===========================================
+   CONTENT
+=========================================== */
+
+.certificate-content{
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.certificate-content h3{
+
+    font-size:1rem;
+
+    line-height:1.4;
+
+    margin-bottom:8px;
+
+}
+
+.certificate-issuer{
+
+    color:var(--accent);
+
+    font-size:.9rem;
+
+    margin-bottom:6px;
+
+}
+
+.certificate-year{
+
+    color:var(--muted);
+
+    font-size:.85rem;
+
+    margin-bottom:18px;
+
+}
+
+/* ===========================================
+   BUTTON
+=========================================== */
+
+.certificate-btn{
+
+    margin-top:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:11px;
+
+    border-radius:var(--radius);
+
+    border:1px solid var(--line);
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.certificate-btn:hover{
+
+    background:var(--accent);
+
+    color:var(--accent-contrast);
+
+    border-color:var(--accent);
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .certificate-card{
+
+        flex:0 0 calc((100% - 24px)/2);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .certificate-card{
+
+        flex:0 0 100%;
+
+    }
+
+    .prev{
+
+        left:-12px;
+
+    }
+
+    .next{
+
+        right:-12px;
+
+    }
+
+}
+
+.certificate-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.certificate-modal.show{
+
+    display:flex;
+
+}
+
+.certificate-modal img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:var(--radius);
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    font-size:42px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+}
